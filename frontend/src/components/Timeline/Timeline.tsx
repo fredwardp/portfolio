@@ -1,6 +1,6 @@
 import "./Timeline.css"
 import { useRef } from "react";
-import {motion, useTransform, useScroll, useInView} from "framer-motion"
+import {motion, useTransform, useScroll} from "framer-motion"
 import InViewArticle from "../InViewArticle";
 
 

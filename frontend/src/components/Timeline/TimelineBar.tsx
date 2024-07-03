@@ -1,13 +1,18 @@
-import "./Timeline.css"
-import {motion, useTransform, useScroll} from "framer-motion"
+import React from "react";
+import { motion, useScroll } from "framer-motion";
+import "./Timeline.css";
 
-const TimelineBar = () => {
-const {scrollYProgress} = useScroll()
+const TimelineBar: React.FC = () => {
+  const { scrollYProgress } = useScroll();
 
-    return (          
+  return (
     <div className="timeline-div">
-        <div style={{scaleX: scrollYProgress}} className="timeline-filling"></div>
-    </div> );
-}
- 
+      <motion.div
+        style={{ scaleX: scrollYProgress }}
+        className="timeline-filling"
+      ></motion.div>
+    </div>
+  );
+};
+
 export default TimelineBar;
