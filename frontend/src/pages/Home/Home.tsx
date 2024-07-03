@@ -1,14 +1,14 @@
 
 
-import { useContext, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import HomeHero from "../../components/HomeHero/HomeHero";
 import Projects from "../../components/Projects/Projects";
 import TechStack from "../../components/TechStack/TechStack";
 import Timeline from "../../components/Timeline/Timeline";
 import "./Home.css"
-import { NavColorConext } from "../../components/context";
+import { useNavColor } from "../../components/context";
 const Home :React.FC = () => {
-    const { setNavColor, navColor} = useContext(NavColorConext)
+    const { setNavColor } = useNavColor();
 
     useEffect(() => {
         setNavColor("#183d3d")

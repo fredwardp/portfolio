@@ -6,7 +6,6 @@ import "./TechStack.css"
 const TechStack = () => {
     const [bgChange, setBgChange] = useState("./img/react_background.png")
 
-    console.log(bgChange);
     
     return ( 
     <section className="techstack_section">

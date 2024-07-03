@@ -30,7 +30,7 @@ const Projects = () => {
                     </div>
                     <h3>{project.name}</h3>
                     <div className="projects_tech_wrapper">{project.techUsed.map((tech) => (
-                        <p>{tech}</p>
+                        <p key={tech}>{tech}</p>
                         ))}
                     </div>
                 </Link >

@@ -2,9 +2,8 @@ import "./Projekt.css";
 import { useParams } from "react-router-dom";
 import projects from "../../components/Projects/ProjectsData.js";
 import ImgPopup from "../../components/ImgPopup/ImgPopup";
-import { useContext, useEffect, useState } from "react";
-import { color } from "framer-motion";
-import { NavColorConext } from "../../components/context.js";
+import {  useEffect, useState } from "react";
+import { useNavColor } from "../../components/context.js";
 
 interface Feature {
   key: string;
@@ -32,7 +31,7 @@ const Project = () => {
   const [showPopup, setShowPopUp] = useState<boolean>(false);
   const [imgShown, setImgShown] = useState<number>(0);
   const { index } = useParams<{ index: string }>();
-  const { setNavColor} = useContext(NavColorConext)
+  const { setNavColor } = useNavColor();
 
   const projectIndex = parseInt(index, 10);
   const project: Project | undefined = projects[projectIndex];

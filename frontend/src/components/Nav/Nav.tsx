@@ -1,14 +1,13 @@
-import { useContext } from "react";
 import "./Nav.css"
-import { Link, NavLink } from "react-router-dom";
-import { NavColorConext } from "../context";
+import { Link} from "react-router-dom";
+import {useNavColor } from "../context";
 
 const Nav: React.FC = () => {
-    const { setNavColor, navColor} = useContext(NavColorConext)
+    const { navColor } = useNavColor();
 
 
 
-    
+
     return (  
         <nav className="container">
         <Link style={{color: navColor}} className="logo" to="/">Frederick Pawelzik</Link>

@@ -1,5 +1,5 @@
 import "./HomeHero.css"
-import { Link } from "react-router-dom";
+
 
 const HomeHero = () => {
     return ( <header className="home_header">
