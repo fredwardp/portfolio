@@ -7,7 +7,7 @@
   border: 2px solid var(--main-color);
   padding-inline: 12px;
   border-radius: 100px;
-  animation: popup-appear 0.9s ease;
+  animation: popup-appear 0.7s ease;
 }
 
 @keyframes popup-appear {
@@ -15,7 +15,7 @@
     opacity: 0;
     width: 0;
   }
-  50% {
+  40% {
     opacity: 0;
   }
   100% {
