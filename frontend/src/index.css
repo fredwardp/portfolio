@@ -28,6 +28,8 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
+  transition: all 0.4s ease;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -58,6 +60,11 @@ img {
   font-family: var(--mulish);
   font-weight: bold;
   font-size: 16px;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  background-color: var(--bright-text-color);
 }
 
 .no_btn {

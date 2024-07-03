@@ -9,7 +9,7 @@
 
 .quote_section blockquote {
   font-size: 24px;
-  max-width: 72ch;
+  max-width: 64ch;
   margin-inline: auto;
   line-height: 150%;
   display: flex;
@@ -18,12 +18,18 @@
   color: var(--bright-text-color);
 }
 
+.quote_section div {
+  display: flex;
+  gap: 6px;
+  margin-top: 16px;
+}
+
 .quote_section p {
   display: block;
   font-family: var(--mulish);
-  color: var(--dark-text-color);
+  color: var(--main-color);
   font-size: 18px;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 .quote_section p:first-of-type {

@@ -35,6 +35,7 @@ const Projects = () => {
                     </div>
                 </Link >
 ))}
+<a className="more_projects" href="https://github.com/fredwardp?tab=repositories" target="_blank">Jede Menge weiterer Projekte</a >
         </div>
     </section>);
 }

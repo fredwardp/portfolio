@@ -1,0 +1,33 @@
+.color_popup {
+  display: flex;
+  gap: 6px;
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  border: 2px solid var(--main-color);
+  padding-inline: 12px;
+  border-radius: 100px;
+  animation: popup-appear 0.9s ease;
+}
+
+@keyframes popup-appear {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    width: max-content;
+  }
+}
+
+.color_dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  padding: unset;
+  animation: dots-appear 0.4s ease;
+}

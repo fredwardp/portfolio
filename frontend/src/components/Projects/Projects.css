@@ -83,10 +83,31 @@
 }
 
 .in_work p {
-  color: var(--main-bg-color);
+  color: white;
   text-align: center;
   line-height: 100%;
   font-family: var(--mulish);
   font-size: 14px;
   font-weight: 600;
+}
+
+.more_projects {
+  display: inline-block;
+  position: relative;
+  font-family: var(--mulish);
+  width: max-content;
+  text-decoration: none;
+  padding-bottom: 6px;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 10px;
+  background: linear-gradient(var(--main-color), var(--main-color)) no-repeat;
+  background-size: 0 2px;
+  background-position: 0 100%;
+  transition: background-size 0.4s ease;
+}
+
+.more_projects:hover {
+  background-size: 100% 2px;
+  color: var(--main-color);
 }

@@ -1,0 +1,81 @@
+const colorPairs = [
+  {
+    primary: "#FFC107",
+    secondary: "#997404",
+    bg: "#121212",
+    text: "#E0E0E0",
+    text2: "#E0E0E0",
+  },
+  {
+    primary: "#E91E63",
+    secondary: "#831138",
+    bg: "#121212",
+    text: "#E0E0E0",
+    text2: "#E0E0E0",
+  },
+  {
+    primary: "#CDDC39",
+    secondary: "#6E761F",
+    bg: "#121212",
+    text: "#E0E0E0",
+    text2: "#E0E0E0",
+  },
+  {
+    primary: "#03A9F4",
+    secondary: "#02628E",
+    bg: "#121212",
+    text: "#E0E0E0",
+    text2: "#E0E0E0",
+  },
+  {
+    primary: "#FF6F00",
+    secondary: "#994300",
+    bg: "#121212",
+    text: "#E0E0E0",
+    text2: "#E0E0E0",
+  },
+  {
+    primary: "#BB86FC",
+    secondary: "#6F5096",
+    bg: "#121212",
+    text: "#E0E0E0",
+    text2: "#E0E0E0",
+  },
+  {
+    primary: "#40A3A3",
+    secondary: "#183D3D",
+    bg: "#ffffff",
+    text: "#25313c",
+    text2: "6d7d8b",
+  },
+  {
+    primary: "#0052CC",
+    secondary: "#002966",
+    bg: "#ffffff",
+    text: "#25313c",
+    text2: "6d7d8b",
+  },
+  {
+    primary: "#FF6F61",
+    secondary: "#99433A",
+    bg: "#ffffff",
+    text: "#25313c",
+    text2: "6d7d8b",
+  },
+  {
+    primary: "#F39C12",
+    secondary: "#8D5B0A",
+    bg: "#ffffff",
+    text: "#25313c",
+    text2: "6d7d8b",
+  },
+  {
+    primary: "#9B59B6",
+    secondary: "#442750",
+    bg: "#ffffff",
+    text: "#25313c",
+    text2: "6d7d8b",
+  },
+];
+
+export default colorPairs;

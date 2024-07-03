@@ -8,7 +8,7 @@ const HomeHero = () => {
             <p className="heading_description">Mein Name ist</p>
             <h1>Frederick Pawelzik</h1>
             <p className="hero_fullstack">fullstack entwickler</p>
-            <p className="hero_description">Willkommen auf meiner Seite. Ich möchte euch gerne etwas über meinen Werdegang erzählen und zeigen was ich bisher gelernt und umgesetzt habe.</p>
+            <p className="hero_description">Willkommen auf meiner Seite. Ich möchte euch gerne etwas über meinen Werdegang erzählen und zeigen, welche Fähigkeiten und Projekte ich bisher entwickelt habe.</p>
             <a className="btn" href="mailto:frederickpawelzik@gmail.com">Contact me</a>
             <div>
                 <a href="https://github.com/fredwardp" target="_blank">Github</a>

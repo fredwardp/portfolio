@@ -40,9 +40,10 @@ const Home :React.FC = () => {
             <br />
 
             </blockquote>
-                        <p ><br />{author}</p>
-            <br />
+            <div>
+                        <p >{author}</p>
             <p >{position}</p>
+            </div>
         </section>
         <Timeline/>
         <TechStack/>

@@ -34,12 +34,14 @@
   font-size: 32px;
   color: var(--main-color);
   font-family: var(--abhaya-semibold);
+  opacity: 0.9;
 }
 
 .home_hero_content h1 {
   font-size: 59px;
   color: var(--main-color);
   margin-bottom: 11px;
+  opacity: 0.9;
 }
 
 .hero_fullstack {
@@ -50,16 +52,18 @@
   font-weight: 300;
   color: var(--main-color);
   margin-bottom: 25px;
+  /* opacity: 0.9; */
 }
 
 .hero_description {
   max-width: 50ch;
   margin-inline: auto;
-  color: var(--mid-text-color);
+  color: var(--dark-text-color);
   font-size: 18px;
   font-family: var(--abhaya-semibold);
   line-height: 160%;
   margin-bottom: 50px;
+  opacity: 0.9;
 }
 
 .home_hero_content div {
@@ -74,6 +78,11 @@
 
 .home_hero_content div a {
   color: var(--bright-text-color);
+  transition: all 0.4s ease;
+}
+
+.home_hero_content div a:hover {
+  color: var(--main-color);
 }
 
 .home_hero_bg {
