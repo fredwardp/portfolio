@@ -1,0 +1,24 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 25px;
+  position: fixed;
+  z-index: 999;
+}
+
+.logo {
+  color: var(--main-color);
+  font-family: var(--mulish);
+  font-weight: 800;
+}
+
+nav div {
+  display: flex;
+  gap: 35px;
+  padding-right: 60px;
+}
+
+nav div a {
+  color: var(--mid-text-color);
+}

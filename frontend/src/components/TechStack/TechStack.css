@@ -1,0 +1,94 @@
+.techstack_section {
+  background: var(--main-color-gradient);
+  padding-bottom: 30vw;
+}
+
+.techstack_wrapper {
+  display: flex;
+  position: relative;
+}
+
+.video_wrapper {
+  background: rgba(24, 61, 61, 0.3);
+  position: relative;
+}
+
+/* .video_gradient {
+  height: 5vw;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(
+    transparent,
+    var(--main-color) 80%,
+    var(--main-color)
+  );
+  width: 49vw;
+} */
+
+.video_overlay {
+  height: 100%;
+  width: 49vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: rgba(24, 61, 61, 0.2); */
+}
+
+.techstack_wrapper video {
+  width: 50vw;
+}
+
+.stack_wrapper {
+  width: 51vw;
+  position: absolute;
+  right: 0;
+
+  height: 100%;
+  padding: 4vw 6vw;
+  /* background: url("./img/react_background.png"); */
+  /* background: var(--main-color-gradient); */
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  background-repeat: no-repeat;
+  background-position: 2vw -20vw;
+  background-size: cover;
+}
+
+.stack_wrapper h2 {
+  color: var(--whitest-text-color);
+  font-family: var(--mulish);
+  font-size: 41px;
+  font-weight: 900;
+  letter-spacing: 6%;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.stack_wrapper article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  margin-right: 10vw;
+}
+
+.stack_wrapper article div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 30ch;
+}
+
+.stack_wrapper article img {
+  mix-blend-mode: luminosity;
+  height: 4vw;
+}
+
+.stack_wrapper article p {
+  color: var(--whitest-text-color);
+  font-family: var(--mulish);
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.8;
+}

@@ -1,0 +1,51 @@
+.img_popup_sec {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  justify-content: space-between;
+  padding-inline: 10vw;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.img_popup_sec::-webkit-scrollbar {
+  display: none;
+}
+
+.img_popup_sec button {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.img_popup_sec button:hover {
+  opacity: 0.9;
+}
+
+.img_popup_sec img {
+  max-height: 90vh;
+  max-width: 65vw;
+  object-fit: cover;
+}
+
+.img_popup_sec .closing_btn {
+  position: absolute;
+  color: white;
+  top: 5vh;
+  right: 6vw;
+  opacity: 0.9;
+  font-family: var(--mulish);
+  font-size: 20px;
+}
+
+.hide {
+  opacity: 0;
+  scale: 0;
+}
