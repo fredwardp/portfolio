@@ -9,7 +9,7 @@
 .projekt_header h1 {
   position: absolute;
   top: 120px;
-  font-size: 112px;
+  font-size: clamp(5.3125rem, 1.9922rem + 5.3125vw, 10.625rem);
   font-weight: 800;
   font-family: var(--mulish);
   /* color: var(--main-bg-color); */
@@ -77,18 +77,19 @@
 .green_content h2 {
   font-family: var(--mulish);
   margin-bottom: 10px;
-  font-size: 30px;
+  font-size: clamp(1.875rem, 0.7813rem + 1.25vw, 2.8125rem);
 }
 
 .green_content p {
   font-family: Inter;
-  /* font-size: 15px; */
+  font-size: clamp(1rem, 0.4886rem + 0.5455vw, 1.375rem);
   line-height: 165%;
   opacity: 0.9;
 }
 
 .projekt_tech_wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 26px;
 }
@@ -117,7 +118,7 @@
 .projekt_link_wrapper {
   display: flex;
   gap: 12px;
-  font-size: 18px;
+  font-size: clamp(1.125rem, 0.4432rem + 0.7273vw, 1.625rem);
   margin-top: 30px;
   font-family: var(--mulish);
   font-weight: 700;
@@ -125,4 +126,89 @@
 
 .projekt_link_wrapper a {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 1026px) {
+  .projekt_header h1 {
+    font-size: 75px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .projekt_header h1 {
+    font-size: 60px;
+    padding-left: 25px;
+  }
+  .projekt_header {
+    flex-direction: column-reverse;
+    padding-top: 100px;
+  }
+  .projekt_content_wrapper {
+    width: 100%;
+  }
+  .green_content {
+    padding-top: 140px;
+  }
+  .mainimg_wrapper {
+    margin-top: 60px;
+    width: 100%;
+  }
+  .gallery_wrapper img {
+    height: 25vw;
+  }
+  .mainimg {
+    height: 90vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .projekt_header h1 {
+    font-size: 42px;
+  }
+  .green_content {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .projekt_header h1 {
+    font-size: 32px;
+  }
+  .green_content {
+    padding-top: 90px;
+  }
+  .green_content h2 {
+    font-size: 26px;
+  }
+  .green_content p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .projekt_header h1 {
+    font-size: 26px;
+  }
+  .green_content {
+    padding-top: 70px;
+  }
+  .green_content h2 {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+  .green_content p {
+    font-size: 14px;
+  }
+  .mainimg_wrapper {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .green_content {
+    padding-top: 10vw;
+  }
+  .mainimg_wrapper {
+    margin-top: 10vw;
+  }
 }

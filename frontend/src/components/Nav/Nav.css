@@ -1,6 +1,7 @@
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding-top: 25px;
   position: fixed;
@@ -56,3 +57,9 @@ nav div a {
   transform: rotate(-135deg);
   scale: 1.2;
 }
+
+/* @media only screen and (max-width: 600px) {
+  nav {
+    padding-top: 55px;
+  }
+} */
