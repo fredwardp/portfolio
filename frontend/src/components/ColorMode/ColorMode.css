@@ -8,6 +8,7 @@
   padding-inline: 12px;
   border-radius: 100px;
   animation: popup-appear 0.7s ease;
+  background-color: var(--main-bg-color);
 }
 
 @keyframes popup-appear {
