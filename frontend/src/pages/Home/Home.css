@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-inline: 6vw;
 }
 
 .quote_section blockquote {
@@ -54,5 +55,17 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 709px) {
+  .quote_section {
+    min-height: 60svh;
+  }
+  .quote_section blockquote {
+    font-size: 18px;
+  }
+  .quote_section p {
+    font-size: 16px;
   }
 }

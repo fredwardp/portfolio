@@ -13,6 +13,17 @@
   padding-inline: 10vw;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  transition: all 0.4s ease-in;
+  animation: popup-bg 0.4s forwards;
+}
+
+@keyframes popup-bg {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 .img_popup_sec::-webkit-scrollbar {
@@ -33,6 +44,21 @@
   max-height: 90vh;
   max-width: 65vw;
   object-fit: cover;
+  animation: popup-img 0.6s forwards;
+}
+
+@keyframes popup-img {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+    scale: 0.95;
+  }
+  100% {
+    opacity: 100%;
+    scale: 1;
+  }
 }
 
 .img_popup_sec .closing_btn {

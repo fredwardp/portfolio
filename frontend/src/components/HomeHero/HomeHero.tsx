@@ -23,6 +23,7 @@ const HomeHero = () => {
         </article>
     </div>
     <img className="home_hero_img" src="/img/home_hero_img.png" alt="" />
+    <img className="home_hero_img_mobile" src="/img/home_hero_img_mobile.png" alt="" />
 </header>  );
 }
  

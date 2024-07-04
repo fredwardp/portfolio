@@ -171,7 +171,14 @@ const projects = [
     ],
     liveSite: false,
     gitHub: "https://github.com/fredwardp/tweety",
-    gallery: ["/img/tweety_home.png", "/img/tweety_profile.png"],
+    gallery: [
+      "/img/tweety_home.png",
+      "/img/tweety_profile.png",
+      "/img/tweety_comments.png",
+      "/img/tweety_editprofile.png",
+      "/img/tweety_login.png",
+      "/img/tweety_register.png",
+    ],
     color: {
       bg: "#0E1D27",
       text: "#D9D9D9",

@@ -40,6 +40,10 @@
   padding-block: 12px;
 }
 
+.gallery_wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
 .gallery_wrapper img {
   height: 12vw;
   cursor: pointer;

@@ -111,3 +111,39 @@
   background-size: 100% 2px;
   color: var(--main-color);
 }
+
+@media only screen and (max-width: 1026px) {
+  .projects_sec {
+    margin-inline: 10vw;
+  }
+  .projects_img_container {
+    height: 26vw;
+  }
+  .projects_wrapper .projects_tech_wrapper p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .projects_sec {
+    margin-inline: 5vw;
+  }
+  .projects_sec h2 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 709px) {
+  .projects_wrapper {
+    grid-template-columns: 1fr;
+  }
+  .projects_img_container {
+    height: 60vw;
+  }
+  .projects_wrapper .projects_tech_wrapper {
+    flex-wrap: wrap;
+  }
+  .projects_sec h2 {
+    text-align: center;
+  }
+}

@@ -92,3 +92,53 @@
   text-transform: uppercase;
   opacity: 0.8;
 }
+
+@media only screen and (max-width: 1026px) {
+  .stack_wrapper article {
+    margin-right: 5vw;
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* .stack_wrapper {
+    padding: 3vw 4vw;
+  } */
+  .stack_wrapper h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .stack_wrapper article {
+    margin-right: 0;
+    gap: 20px;
+  }
+  .stack_wrapper article p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .techstack_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .stack_wrapper {
+    position: relative;
+    width: 100%;
+    background-size: contain;
+    background-position: 100% 20px;
+    padding-top: 60px;
+  }
+  .stack_wrapper article {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stack_wrapper article div {
+    margin-bottom: 20px;
+  }
+  .stack_wrapper article img {
+    height: 60px;
+  }
+  .video_wrapper {
+    display: none;
+  }
+}

@@ -32,7 +32,7 @@ const targetRef = useRef<HTMLDivElement | null>(null);
 const {scrollYProgress} = useScroll({
     target: targetRef
 })
-const x = useTransform(scrollYProgress, [0, 1], ["14%", "-50.5%"])
+const x = useTransform(scrollYProgress, [0, 1], ["14%", "-66.5%"])
 
     return ( <section ref={targetRef} className="timeline-section">
         <div className="container timeline-animation-wrapper">

@@ -79,3 +79,28 @@
   object-fit: cover;
   object-position: 50% 0%;
 }
+
+@media only screen and (max-width: 1026px) {
+  .timeline-section {
+    min-height: 140svh;
+  }
+  .timeline-stations {
+    width: 240vw;
+  }
+  .timeline-stations article img {
+    width: 60vw;
+    min-width: 360px;
+    min-height: 240px;
+    height: 40vw;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .timeline-section .timeline-stations {
+    flex-direction: column;
+    transform: unset !important;
+  }
+  .timeline-stations article:nth-of-type(odd) {
+    margin-top: 30px;
+  }
+}
