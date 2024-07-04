@@ -134,6 +134,9 @@
 }
 
 @media only screen and (max-width: 709px) {
+  .projects_sec {
+    margin-top: -45vw;
+  }
   .projects_wrapper {
     grid-template-columns: 1fr;
   }
@@ -145,5 +148,9 @@
   }
   .projects_sec h2 {
     text-align: center;
+  }
+  .in_work {
+    left: -15px;
+    top: 55px;
   }
 }

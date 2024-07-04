@@ -80,6 +80,25 @@
   object-position: 50% 0%;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Initial state of the element */
+.invisible {
+  opacity: 0.2;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Class to apply the animation */
+.visible {
+  animation: fadeIn 3s forwards;
+}
 @media only screen and (max-width: 1026px) {
   .timeline-section {
     min-height: 140svh;
@@ -100,13 +119,23 @@
     flex-direction: column;
     transform: unset !important;
   }
-  .timeline-stations article:nth-of-type(odd) {
-    margin-top: 30px;
+  .timeline-section .timeline-stations article {
+    margin-top: 60px;
+    margin-bottom: 30px;
   }
+  /* Initial state of the element */
+
   .timeline-stations article img {
     width: 90vw;
     min-height: 240px;
-    height: 40vw;
+    height: 80vw;
     min-width: unset;
+  }
+  .timeline-stations article div p {
+    margin-bottom: 6px;
+  }
+  .timeline-animation-wrapper h2 {
+    text-align: left;
+    margin-bottom: 0px;
   }
 }
