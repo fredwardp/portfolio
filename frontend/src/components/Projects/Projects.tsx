@@ -1,6 +1,9 @@
+"use client";
 import { Link } from "react-router-dom";
 import "./Projects.css"
 import projects from "./ProjectsData.js"
+import { useScroll } from "framer-motion";
+import { useRef } from "react";
 interface Feature {
     key: string;
     description: string;
@@ -16,6 +19,11 @@ interface Project {
   }
 
 const Projects = () => {
+const ref = useRef<HTMLAnchorElement>(null)
+    const {scrollYProgress} = useScroll({
+        target: ref,
+        offset: ["0 1", "1.33 1"]
+    })
     return (  
     <section className="projects_sec">
         <div className="in_work">
@@ -24,7 +32,7 @@ const Projects = () => {
         <h2>Projekte</h2>
         <div className="projects_wrapper">
             {projects.map((project: Project, index: number) => (
-                <Link key={index} to={`/project/${index}`}>
+                <Link style={{scale: scrollYProgress, opacity: scrollYProgress}} ref={ref} key={index} to={`/project/${index}`}>
                     <div className="projects_img_container">
                         <img src={project.gallery[0]} alt="" />
                     </div>

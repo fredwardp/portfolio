@@ -144,4 +144,7 @@
   .video_wrapper {
     display: none;
   }
+  .video_wrapper video {
+    display: none;
+  }
 }

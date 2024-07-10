@@ -191,7 +191,7 @@
   }
   .home_hero_content {
     width: 100%;
-    margin-top: -45%;
+    margin-top: -49%;
     padding-bottom: 0;
     padding-inline: 5%;
   }
@@ -200,6 +200,7 @@
   }
   .heading_description {
     font-size: 28px;
+    padding-top: 20px;
   }
   .hero_fullstack {
     font-size: 20px;
@@ -237,7 +238,7 @@
 
 @media only screen and (max-width: 410px) {
   .home_hero_img_mobile {
-    top: 11%;
+    top: 10%;
     right: 24.5%;
     width: 52vw;
   }

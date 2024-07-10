@@ -106,7 +106,7 @@ const projects = [
           "Erkunde Beiträge von Benutzern, denen du nicht folgst. Suche nach Benutzern und Hashtags.",
       },
     ],
-    liveSite: "https://www.mern-stack.de/",
+    liveSite: "https://www.mern-stack.de/signinup",
     gitHub: "https://github.com/MichaelGee76/finstergram",
     gallery: [
       "/img/finsta_light.png",
