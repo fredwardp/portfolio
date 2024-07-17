@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import "./Projects.css";
 import projects from "./ProjectsData";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRef } from "react";
 
 interface Feature {
@@ -24,14 +24,14 @@ const Projects = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   // Get scroll progress
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["0 1", "1.33 1"]
-  });
+//   const { scrollYProgress } = useScroll({
+//     target: sectionRef,
+//     offset: ["0 1", "1.33 1"]
+//   });
 
   // Transform scroll progress to scale and opacity
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
+//   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
+//   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
 
   return (
     <section className="projects_sec">
@@ -43,7 +43,7 @@ const Projects = () => {
         {projects.map((project: Project, index: number) => (
           <motion.div
             key={index}
-            style={{ scale, opacity }}
+   
           >
             <Link to={`/project/${index}`}>
               <div className="projects_img_container">
