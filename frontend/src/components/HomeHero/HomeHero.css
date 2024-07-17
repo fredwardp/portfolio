@@ -200,7 +200,7 @@
   }
   .heading_description {
     font-size: 28px;
-    padding-top: 20px;
+    padding-top: 35px;
   }
   .hero_fullstack {
     font-size: 20px;
@@ -239,8 +239,8 @@
 @media only screen and (max-width: 410px) {
   .home_hero_img_mobile {
     top: 10%;
-    right: 24.5%;
-    width: 52vw;
+    right: 27.5%;
+    width: 45vw;
   }
   .home_hero_content h1 {
     font-size: 38px;
